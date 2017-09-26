@@ -10,4 +10,5 @@ consulate flask request,均可用 pip 安装<br>
 # 关于consul
 使用consul作为服务注册和发现及健康监测中心<br>
 ![image](https://github.com/zgbgx/MicroServiceUseConsulAndFlask/blob/master/service.png)<br>
-关于 consul ，你可以浏览 https://www.consul.io/
+你可以在  https://www.consul.io/downloads.html 下载系统对应的 consul版本，下载后解压缩 得到一个可执行文件  可用./consul agent -dev 已默认配置启动consul(默认的consul api 及 web 客户端 端口是 8500).<br>
+更多关于 consul ，你可以浏览 https://www.consul.io/
