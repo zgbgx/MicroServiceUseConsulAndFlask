@@ -27,7 +27,6 @@ class ConsulClient():
                 url='http://'+self.host+':'+self.port+'/v1/health/service/'+name+'?dc='+dc+'&token='+self.token
             else:
                 url='http://'+self.host+':'+self.port+'/v1/health/service/'+name+'?dc='+dc+'&token='
-            print url
             resp=requests.get(url)
             if resp.status_code!=200:
                 raise Exception('can not connect to consul ')
