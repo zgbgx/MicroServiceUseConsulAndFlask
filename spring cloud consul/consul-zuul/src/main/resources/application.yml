@@ -1,0 +1,18 @@
+spring:
+  cloud:
+    consul:
+      host: 127.0.0.1
+      port: 8500
+      discovery:
+        healthCheckPath: /health
+        healthCheckInterval: 15s
+        instance-id: consul-zuul
+  application:
+    name: consu-zuul
+server:
+  port: 8003
+zuul:
+  routes:
+    api-a:
+      path: /api-a/**
+      service-id: consul-ribbon

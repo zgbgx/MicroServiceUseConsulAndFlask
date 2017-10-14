@@ -1,0 +1,13 @@
+spring:
+  cloud:
+    consul:
+      host: 127.0.0.1
+      port: 8500
+      discovery:
+        healthCheckPath: /health
+        healthCheckInterval: 15s
+        instance-id: consul-ribbon
+  application:
+    name: consul-ribbon
+server:
+  port: 8002
