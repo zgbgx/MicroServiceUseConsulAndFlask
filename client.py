@@ -12,7 +12,6 @@ class HttpClient():
     def request(self):
         host,port=self.consulclient.getService(self.appname)
         scrapyMessage=requests.get('http://'+host+':'+str(port)+'/'+self.appname).text
-        print scrapyMessage
 if __name__=='__main__':
     client=HttpClient('127.0.0.1','8500','doResponse')
     client.request()
